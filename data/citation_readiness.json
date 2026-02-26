@@ -1,0 +1,71 @@
+{
+  "citation_score": 25,
+  "max_score": 100,
+  "total_issues": 6,
+  "high_severity": 2,
+  "medium_severity": 2,
+  "low_severity": 2,
+  "checks": {
+    "structured_data": {
+      "score": 0,
+      "max": 40,
+      "has_schema_org": false,
+      "has_author_schema": false,
+      "has_organization_schema": false,
+      "has_faq_schema": false,
+      "has_howto_schema": false
+    },
+    "eeat_signals": {
+      "score": 0,
+      "max": 30,
+      "has_author_info": false,
+      "has_contact_info": false,
+      "has_about_page": false,
+      "has_privacy_policy": false
+    },
+    "content_quality": {
+      "score": 25,
+      "max": 30,
+      "pages_with_substantial_content": 3,
+      "pages_with_headings": 1
+    }
+  },
+  "issues": [
+    {
+      "type": "missing_schema_org",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "No Schema.org structured data found. AI systems prefer sites with structured data for citation."
+    },
+    {
+      "type": "missing_author_info",
+      "severity": "medium",
+      "page": "https://httpbin.org",
+      "message": "No author information or Author schema found. E-E-A-T requires clear attribution."
+    },
+    {
+      "type": "missing_organization_schema",
+      "severity": "medium",
+      "page": "https://httpbin.org",
+      "message": "No Organization schema found. Adding this helps establish authority."
+    },
+    {
+      "type": "missing_faq_schema",
+      "severity": "low",
+      "page": "https://httpbin.org",
+      "message": "No FAQ schema found. FAQs are highly valued for AI citations."
+    },
+    {
+      "type": "missing_howto_schema",
+      "severity": "low",
+      "page": "https://httpbin.org",
+      "message": "No HowTo schema found. How-to content is frequently cited by AI."
+    },
+    {
+      "type": "thin_content",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "1 page(s) with very thin content (<50 words). AI prefers substantial content."
+    }
+  ]
+}

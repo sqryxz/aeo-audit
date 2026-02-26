@@ -1,0 +1,53 @@
+{
+  "analysis_date": "2026-02-25T19:42:18.175Z",
+  "target_domain": "https://httpbin.org",
+  "target_brand": "HTTPBin",
+  "competitors_analyzed": [],
+  "gaps": [
+    {
+      "type": "no_competitors_configured",
+      "severity": "info",
+      "message": "No competitors defined in customer configuration. Add competitors to customer.json to enable gap analysis.",
+      "recommendation": "Add a \"competitors\" array to customer.json with competitor domains for analysis."
+    }
+  ],
+  "opportunities": [
+    {
+      "priority": "high",
+      "title": "Define Competitor List",
+      "description": "Add competitors to customer.json to enable detailed gap analysis",
+      "effort": "low"
+    },
+    {
+      "priority": "medium",
+      "title": "Implement Competitor Crawling",
+      "description": "Build competitor site crawling capability for automated comparison",
+      "effort": "high"
+    }
+  ],
+  "score": 0,
+  "max_score": 100,
+  "status": "pending_competitor_config",
+  "analysis_framework": {
+    "content_depth": {
+      "description": "Compare word counts and content richness against competitors",
+      "current_site_word_count": 4450
+    },
+    "structured_data": {
+      "description": "Compare structured data presence (JSON-LD, Schema.org)",
+      "current_site_structured_data_types": []
+    },
+    "key_pages": {
+      "description": "Compare key page types and coverage",
+      "current_site_key_pages": [
+        "homepage",
+        "homepage"
+      ]
+    },
+    "seo_signals": {
+      "description": "Compare meta tags, headings, and SEO optimization",
+      "current_site_has_meta_descriptions": 0,
+      "current_site_has_h1": 0
+    }
+  }
+}

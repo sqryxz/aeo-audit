@@ -1,0 +1,221 @@
+{
+  "website_url": "https://httpbin.org",
+  "generated_at": "2026-02-26T04:10:00+08:00",
+  "summary": {
+    "total_issues": 17,
+    "critical_count": 0,
+    "warning_count": 12,
+    "info_count": 5,
+    "score": 35
+  },
+  "issues": [
+    {
+      "id": "CONTENT-001",
+      "severity": "warning",
+      "category": "content",
+      "title": "Missing meta descriptions",
+      "description": "Pages are missing meta description tags, which are important for search engine snippets and AI citation readiness.",
+      "affected_pages": [
+        "https://httpbin.org",
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Add unique meta description tags (150-160 characters) to all pages, including relevant keywords and a clear call-to-action.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "CONTENT-002",
+      "severity": "warning",
+      "category": "content",
+      "title": "Missing H1 headings",
+      "description": "Pages lack H1 headings, which help search engines understand the main topic of the page.",
+      "affected_pages": [
+        "https://httpbin.org",
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Add a single H1 heading to each page that clearly describes the page's main topic.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "CONTENT-003",
+      "severity": "warning",
+      "category": "content",
+      "title": "Missing page title",
+      "description": "One or more pages are missing required title tags, which are critical for SEO and user experience.",
+      "affected_pages": [
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Add descriptive title tags (50-60 characters) to all pages.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "CONTENT-004",
+      "severity": "warning",
+      "category": "content",
+      "title": "Thin content detected",
+      "description": "Some pages have very low word counts, which may negatively impact search rankings and AI citation quality.",
+      "affected_pages": [
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Expand content on thin pages to at least 300-500 words. Add valuable, substantive information that addresses user needs.",
+      "effort_estimate": "high"
+    },
+    {
+      "id": "TECH-001",
+      "severity": "warning",
+      "category": "technical",
+      "title": "Missing robots.txt",
+      "description": "No robots.txt file found. This file helps search engines understand which pages to crawl and which to exclude.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Create a robots.txt file at the domain root to guide search engine crawlers.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "TECH-002",
+      "severity": "warning",
+      "category": "technical",
+      "title": "Missing sitemap.xml",
+      "description": "No XML sitemap found. Sitemaps help search engines discover all pages on the site, especially important for larger sites.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Create and submit an XML sitemap to Google Search Console and Bing Webmaster Tools.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "TECH-003",
+      "severity": "info",
+      "category": "technical",
+      "title": "Non-HTML resources crawled",
+      "description": "The crawler encountered non-HTML resources (CSS, images) during the crawl.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Consider excluding non-HTML resources from future crawls using robots.txt or crawl configuration.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "SD-001",
+      "severity": "warning",
+      "category": "structured_data",
+      "title": "No Schema.org structured data",
+      "description": "No Schema.org structured data (JSON-LD, Microdata, or RDFa) was found on the site. AI systems strongly prefer sites with structured data for citation.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Implement JSON-LD structured data using Schema.org vocabulary. Start with Organization, Article, or FAQ schemas as appropriate.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "SD-002",
+      "severity": "warning",
+      "category": "structured_data",
+      "title": "Missing FAQ schema",
+      "description": "No FAQ schema found. FAQ content with structured data is highly valued for AI citations and featured snippets.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Create FAQ pages with proper FAQPage schema markup to improve AI citation opportunities.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "SD-003",
+      "severity": "warning",
+      "category": "structured_data",
+      "title": "Missing HowTo schema",
+      "description": "No HowTo schema found. How-to content with structured data is frequently cited by AI systems.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Add HowTo schema to any how-to content on the site.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "SD-004",
+      "severity": "info",
+      "category": "structured_data",
+      "title": "Missing OpenGraph tags",
+      "description": "No OpenGraph meta tags found. OpenGraph helps control how URLs appear when shared on social media.",
+      "affected_pages": [
+        "https://httpbin.org",
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Add OpenGraph meta tags (og:title, og:description, og:image, og:url) for better social sharing.",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "SD-005",
+      "severity": "info",
+      "category": "structured_data",
+      "title": "Missing Twitter Card tags",
+      "description": "No Twitter Card meta tags found. Twitter Cards enhance how URLs appear in tweets.",
+      "affected_pages": [
+        "https://httpbin.org",
+        "https://httpbin.org/forms/post"
+      ],
+      "recommendation": "Add Twitter Card meta tags (twitter:card, twitter:title, twitter:description, twitter:image).",
+      "effort_estimate": "low"
+    },
+    {
+      "id": "AUTH-001",
+      "severity": "warning",
+      "category": "authority",
+      "title": "Missing author information",
+      "description": "No author information or Author schema found. E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) requires clear attribution.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Add author bio pages and implement Author schema markup. Link author names to their profiles throughout the site.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "AUTH-002",
+      "severity": "warning",
+      "category": "authority",
+      "title": "Missing Organization schema",
+      "description": "No Organization schema found. Adding this helps establish brand authority and improves knowledge graph visibility.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Add Organization schema with company name, logo, contact info, and social profiles.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "AUTH-003",
+      "severity": "info",
+      "category": "authority",
+      "title": "Missing About page",
+      "description": "No About page detected. About pages are important for establishing trust and authority.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Create a comprehensive About page describing the organization, team, and mission.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "AUTH-004",
+      "severity": "info",
+      "category": "authority",
+      "title": "Missing Privacy Policy",
+      "description": "No Privacy Policy page detected. This is important for trust and may be required for compliance.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Add a Privacy Policy page, especially if collecting user data.",
+      "effort_estimate": "medium"
+    },
+    {
+      "id": "STRUCT-001",
+      "severity": "warning",
+      "category": "structure",
+      "title": "Limited internal linking",
+      "description": "The site has limited internal links between pages, which affects crawlability and page authority distribution.",
+      "affected_pages": [
+        "https://httpbin.org"
+      ],
+      "recommendation": "Improve internal linking structure. Add navigation menus, related content links, and breadcrumb navigation.",
+      "effort_estimate": "medium"
+    }
+  ]
+}

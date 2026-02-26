@@ -1,0 +1,13 @@
+{
+  "customer_id": "test-001",
+  "domain": "https://httpbin.org",
+  "brand_name": "HTTPBin",
+  "target_queries": [
+    "http request testing",
+    "api testing tool",
+    "httpbin.org",
+    "rest api testing"
+  ],
+  "competitors": [],
+  "notes": "Test customer for AEO pipeline validation"
+}

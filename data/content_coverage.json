@@ -1,0 +1,82 @@
+{
+  "issues": [
+    {
+      "type": "missing_meta_description",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "Page missing meta description"
+    },
+    {
+      "type": "missing_meta_description",
+      "severity": "high",
+      "page": "https://httpbin.org/forms/post",
+      "message": "Page missing meta description"
+    },
+    {
+      "type": "missing_h1",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "Page missing H1 heading"
+    },
+    {
+      "type": "missing_h1",
+      "severity": "high",
+      "page": "https://httpbin.org/forms/post",
+      "message": "Page missing H1 heading"
+    },
+    {
+      "type": "missing_title",
+      "severity": "high",
+      "page": "https://httpbin.org/forms/post",
+      "message": "Page missing title tag"
+    },
+    {
+      "type": "thin_content",
+      "severity": "medium",
+      "page": "https://httpbin.org/forms/post",
+      "message": "Very low word count (24). Pages should have substantial content."
+    }
+  ],
+  "summary": {
+    "total_content_pages": 2,
+    "pages_with_meta_description": 0,
+    "pages_with_h1": 0,
+    "pages_with_title": 1,
+    "total_issues": 6,
+    "high_severity": 5,
+    "medium_severity": 1,
+    "coverage_score": 20
+  },
+  "contentPages": [
+    {
+      "url": "https://httpbin.org",
+      "status_code": 200,
+      "title": "httpbin.org",
+      "meta_description": "",
+      "h1": [],
+      "h2": [
+        "Other Utilities"
+      ],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 191,
+      "images": [],
+      "internal_links": 3,
+      "external_links": 0
+    },
+    {
+      "url": "https://httpbin.org/forms/post",
+      "status_code": 200,
+      "title": "",
+      "meta_description": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 24,
+      "images": [],
+      "internal_links": 0,
+      "external_links": 0
+    }
+  ]
+}

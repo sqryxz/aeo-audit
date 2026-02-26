@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aeo-agency.example.com/schemas/customer.json",
+  "title": "Customer",
+  "description": "Schema for AEO audit customer configuration",
+  "type": "object",
+  "required": ["website_url", "business_name"],
+  "properties": {
+    "website_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Primary website URL to audit"
+    },
+    "business_name": {
+      "type": "string",
+      "description": "Business name for the audit report"
+    },
+    "industry": {
+      "type": "string",
+      "description": "Industry category"
+    },
+    "target_keywords": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Primary keywords to optimize for AI search"
+    },
+    "competitors": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": " competitor website URLs"
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email",
+      "description": "Contact email for report delivery"
+    }
+  }
+}

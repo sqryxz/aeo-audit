@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-02-25T19:11:27.039Z",
+  "health_score": 60,
+  "total_issues": 5,
+  "critical_issues": 0,
+  "high_issues": 2,
+  "medium_issues": 1,
+  "low_issues": 2,
+  "issues": [
+    {
+      "type": "missing_meta_description",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "Key page missing meta description"
+    },
+    {
+      "type": "missing_robots_txt",
+      "severity": "medium",
+      "page": "https://httpbin.org",
+      "message": "robots.txt not found - search engines may not discover all pages"
+    },
+    {
+      "type": "missing_sitemap",
+      "severity": "high",
+      "page": "https://httpbin.org",
+      "message": "No sitemap.xml found - may hinder deep crawling"
+    },
+    {
+      "type": "thin_content",
+      "severity": "low",
+      "page": "https://httpbin.org/forms/post",
+      "message": "Very low word count (24)"
+    },
+    {
+      "type": "non_html_crawled",
+      "severity": "low",
+      "page": "https://httpbin.org",
+      "message": "Crawled 2 non-HTML resources (css, images) - may want to exclude"
+    }
+  ],
+  "summary": {
+    "pages_crawled": 4,
+    "html_pages": 2,
+    "key_pages_identified": 2,
+    "crawl_duration_ms": 10430
+  }
+}

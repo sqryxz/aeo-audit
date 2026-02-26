@@ -1,0 +1,376 @@
+{
+  "snapshot_type": "baseline",
+  "baseline_created_at": "2026-02-26T11:40:00+08:00",
+  "website_url": "https://httpbin.org",
+  "crawled_at": "2026-02-25T17:41:54.397Z",
+  "crawl_duration_ms": 10430,
+  "pages_crawled": 4,
+  "pages": [
+    {
+      "url": "https://httpbin.org",
+      "status_code": 200,
+      "title": "httpbin.org",
+      "meta_description": "",
+      "h1": [],
+      "h2": [
+        "Other Utilities"
+      ],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 191,
+      "images": [],
+      "internal_links": 3,
+      "external_links": 0
+    },
+    {
+      "url": "https://httpbin.org/flasgger_static/swagger-ui.css",
+      "status_code": 200,
+      "title": "",
+      "meta_description": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 4125,
+      "images": [],
+      "internal_links": 0,
+      "external_links": 0
+    },
+    {
+      "url": "https://httpbin.org/static/favicon.ico",
+      "status_code": 200,
+      "title": "",
+      "meta_description": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 110,
+      "images": [],
+      "internal_links": 0,
+      "external_links": 0
+    },
+    {
+      "url": "https://httpbin.org/forms/post",
+      "status_code": 200,
+      "title": "",
+      "meta_description": "",
+      "h1": [],
+      "h2": [],
+      "h3": [],
+      "structured_data": [],
+      "word_count": 24,
+      "images": [],
+      "internal_links": 0,
+      "external_links": 0
+    }
+  ],
+  "robots_txt": {
+    "exists": false
+  },
+  "sitemaps": [],
+  "key_entities": [
+    {
+      "type": "title",
+      "value": "httpbin.org",
+      "display": "httpbin.org",
+      "source": "https://httpbin.org"
+    },
+    {
+      "type": "heading",
+      "value": "other",
+      "display": "other",
+      "source": "https://httpbin.org"
+    },
+    {
+      "type": "heading",
+      "value": "utilities",
+      "display": "utilities",
+      "source": "https://httpbin.org"
+    },
+    {
+      "type": "url_path",
+      "value": "flasgger_static",
+      "display": "flasgger static",
+      "source": "https://httpbin.org/flasgger_static/swagger-ui.css"
+    },
+    {
+      "type": "url_path",
+      "value": "swagger-ui.css",
+      "display": "swagger ui.css",
+      "source": "https://httpbin.org/flasgger_static/swagger-ui.css"
+    },
+    {
+      "type": "url_path",
+      "value": "static",
+      "display": "static",
+      "source": "https://httpbin.org/static/favicon.ico"
+    },
+    {
+      "type": "url_path",
+      "value": "favicon.ico",
+      "display": "favicon.ico",
+      "source": "https://httpbin.org/static/favicon.ico"
+    },
+    {
+      "type": "url_path",
+      "value": "forms",
+      "display": "forms",
+      "source": "https://httpbin.org/forms/post"
+    },
+    {
+      "type": "url_path",
+      "value": "post",
+      "display": "post",
+      "source": "https://httpbin.org/forms/post"
+    }
+  ],
+  "key_pages": [
+    {
+      "url": "https://httpbin.org",
+      "title": "httpbin.org",
+      "type": "homepage",
+      "word_count": 191,
+      "internal_links": 3,
+      "key_headings": [
+        "Other Utilities"
+      ],
+      "importance_score": 74
+    },
+    {
+      "url": "https://httpbin.org/forms/post",
+      "title": "",
+      "type": "homepage",
+      "word_count": 24,
+      "internal_links": 0,
+      "key_headings": [],
+      "importance_score": 17
+    }
+  ],
+  "content_coverage": {
+    "coverage_score": 20,
+    "total_issues": 6,
+    "high_severity": 5,
+    "medium_severity": 1,
+    "issues": [
+      {
+        "type": "missing_meta_description",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "Page missing meta description"
+      },
+      {
+        "type": "missing_meta_description",
+        "severity": "high",
+        "page": "https://httpbin.org/forms/post",
+        "message": "Page missing meta description"
+      },
+      {
+        "type": "missing_h1",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "Page missing H1 heading"
+      },
+      {
+        "type": "missing_h1",
+        "severity": "high",
+        "page": "https://httpbin.org/forms/post",
+        "message": "Page missing H1 heading"
+      },
+      {
+        "type": "missing_title",
+        "severity": "high",
+        "page": "https://httpbin.org/forms/post",
+        "message": "Page missing title tag"
+      },
+      {
+        "type": "thin_content",
+        "severity": "medium",
+        "page": "https://httpbin.org/forms/post",
+        "message": "Very low word count (24). Pages should have substantial content."
+      }
+    ]
+  },
+  "health_checks": {
+    "timestamp": "2026-02-25T19:11:27.039Z",
+    "health_score": 60,
+    "total_issues": 5,
+    "critical_issues": 0,
+    "high_issues": 2,
+    "medium_issues": 1,
+    "low_issues": 2,
+    "issues": [
+      {
+        "type": "missing_meta_description",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "Key page missing meta description"
+      },
+      {
+        "type": "missing_robots_txt",
+        "severity": "medium",
+        "page": "https://httpbin.org",
+        "message": "robots.txt not found - search engines may not discover all pages"
+      },
+      {
+        "type": "missing_sitemap",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "No sitemap.xml found - may hinder deep crawling"
+      },
+      {
+        "type": "thin_content",
+        "severity": "low",
+        "page": "https://httpbin.org/forms/post",
+        "message": "Very low word count (24)"
+      },
+      {
+        "type": "non_html_crawled",
+        "severity": "low",
+        "page": "https://httpbin.org",
+        "message": "Crawled 2 non-HTML resources (css, images) - may want to exclude"
+      }
+    ],
+    "summary": {
+      "pages_crawled": 4,
+      "html_pages": 2,
+      "key_pages_identified": 2,
+      "crawl_duration_ms": 10430
+    }
+  },
+  "citation_readiness": {
+    "citation_score": 25,
+    "max_score": 100,
+    "total_issues": 6,
+    "high_severity": 2,
+    "medium_severity": 2,
+    "low_severity": 2,
+    "checks": {
+      "structured_data": {
+        "score": 0,
+        "max": 40,
+        "has_schema_org": false,
+        "has_author_schema": false,
+        "has_organization_schema": false,
+        "has_faq_schema": false,
+        "has_howto_schema": false
+      },
+      "eeat_signals": {
+        "score": 0,
+        "max": 30,
+        "has_author_info": false,
+        "has_contact_info": false,
+        "has_about_page": false,
+        "has_privacy_policy": false
+      },
+      "content_quality": {
+        "score": 25,
+        "max": 30,
+        "pages_with_substantial_content": 3,
+        "pages_with_headings": 1
+      }
+    },
+    "issues": [
+      {
+        "type": "missing_schema_org",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "No Schema.org structured data found. AI systems prefer sites with structured data for citation."
+      },
+      {
+        "type": "missing_author_info",
+        "severity": "medium",
+        "page": "https://httpbin.org",
+        "message": "No author information or Author schema found. E-E-A-T requires clear attribution."
+      },
+      {
+        "type": "missing_organization_schema",
+        "severity": "medium",
+        "page": "https://httpbin.org",
+        "message": "No Organization schema found. Adding this helps establish authority."
+      },
+      {
+        "type": "missing_faq_schema",
+        "severity": "low",
+        "page": "https://httpbin.org",
+        "message": "No FAQ schema found. FAQs are highly valued for AI citations."
+      },
+      {
+        "type": "missing_howto_schema",
+        "severity": "low",
+        "page": "https://httpbin.org",
+        "message": "No HowTo schema found. How-to content is frequently cited by AI."
+      },
+      {
+        "type": "thin_content",
+        "severity": "high",
+        "page": "https://httpbin.org",
+        "message": "1 page(s) with very thin content (<50 words). AI prefers substantial content."
+      }
+    ]
+  },
+  "competitor_gap": {
+    "analysis_date": "2026-02-25T19:42:18.175Z",
+    "target_domain": "https://httpbin.org",
+    "target_brand": "HTTPBin",
+    "competitors_analyzed": [],
+    "gaps": [
+      {
+        "type": "no_competitors_configured",
+        "severity": "info",
+        "message": "No competitors defined in customer configuration. Add competitors to customer.json to enable gap analysis.",
+        "recommendation": "Add a \"competitors\" array to customer.json with competitor domains for analysis."
+      }
+    ],
+    "opportunities": [
+      {
+        "priority": "high",
+        "title": "Define Competitor List",
+        "description": "Add competitors to customer.json to enable detailed gap analysis",
+        "effort": "low"
+      },
+      {
+        "priority": "medium",
+        "title": "Implement Competitor Crawling",
+        "description": "Build competitor site crawling capability for automated comparison",
+        "effort": "high"
+      }
+    ],
+    "score": 0,
+    "max_score": 100,
+    "status": "pending_competitor_config",
+    "analysis_framework": {
+      "content_depth": {
+        "description": "Compare word counts and content richness against competitors",
+        "current_site_word_count": 4450
+      },
+      "structured_data": {
+        "description": "Compare structured data presence (JSON-LD, Schema.org)",
+        "current_site_structured_data_types": []
+      },
+      "key_pages": {
+        "description": "Compare key page types and coverage",
+        "current_site_key_pages": [
+          "homepage",
+          "homepage"
+        ]
+      },
+      "seo_signals": {
+        "description": "Compare meta tags, headings, and SEO optimization",
+        "current_site_has_meta_descriptions": 0,
+        "current_site_has_h1": 0
+      }
+    }
+  },
+  "compiled_at": "2026-02-26T03:50:00+08:00",
+  "compilation_summary": {
+    "total_pages": 4,
+    "html_pages": 2,
+    "key_pages": 2,
+    "health_score": 60,
+    "citation_score": 25,
+    "content_coverage_score": 20,
+    "competitor_gap_score": 0,
+    "total_issues_found": 17
+  }
+}

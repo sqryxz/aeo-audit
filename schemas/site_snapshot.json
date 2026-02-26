@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aeo-agency.example.com/schemas/site_snapshot.json",
+  "title": "Site Snapshot",
+  "description": "Schema for crawled site data snapshot",
+  "type": "object",
+  "required": ["website_url", "crawled_at", "pages"],
+  "properties": {
+    "website_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "crawled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "crawl_duration_ms": {
+      "type": "integer"
+    },
+    "pages_crawled": {
+      "type": "integer"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "status_code"],
+        "properties": {
+          "url": {"type": "string", "format": "uri"},
+          "status_code": {"type": "integer"},
+          "title": {"type": "string"},
+          "meta_description": {"type": "string"},
+          "headings": {
+            "type": "object",
+            "properties": {
+              "h1": {"type": "array", "items": {"type": "string"}},
+              "h2": {"type": "array", "items": {"type": "string"}},
+              "h3": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "structured_data": {
+            "type": "array",
+            "items": {"type": "object"}
+          },
+          "word_count": {"type": "integer"},
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "src": {"type": "string"},
+                "alt": {"type": "string"},
+                "has_alt": {"type": "boolean"}
+              }
+            }
+          },
+          "internal_links": {"type": "integer"},
+          "external_links": {"type": "integer"}
+        }
+      }
+    },
+    "robots_txt": {
+      "type": "object",
+      "properties": {
+        "exists": {"type": "boolean"},
+        "allow_directives": {"type": "array", "items": {"type": "string"}},
+        "disallow_directives": {"type": "array", "items": {"type": "string"}},
+        "sitemap_urls": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "sitemaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {"type": "string"},
+          "urls_count": {"type": "integer"},
+          "last_modified": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    "key_entities": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Named entities detected on the site"
+    }
+  }
+}
